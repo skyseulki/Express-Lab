@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Anisky NightClub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Dj index page</h1>
+        <ul>
+            <% dj.forEach((d,i) => { %>
+            <a href="/dj/<%=i%>"> <li><%= d.name%> 
+            <form action="/dj/<%=i%>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+            </form>
+            </li></a>
+            <%})%>
+        </ul>
+        <br/>
+        <nav>
+            <a href="/dj/new">List a new DJ!</a>
+        </nav>
+    </body>
+</html>

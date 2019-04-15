@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Edit Dj Page</h1>
+        <form action="/dj/<%=id%>?_method=PUT" method="POST">
+        Name: <input type="text" name="name" value="<%=dj.name%>"/><br/>
+        Set Time: <input type="text" name="setTime" value="<%=dj.setTime%>"/><br/>
+        Image:
+        <input type="url" name="img"><br/>
+        </form>
+        <button type="submit">Edit Dj</button>
+    </body>
+</html>

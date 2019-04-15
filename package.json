@@ -1,0 +1,27 @@
+{
+  "name": "week-5",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyseulki/Express-Lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyseulki/Express-Lab/issues"
+  },
+  "homepage": "https://github.com/skyseulki/Express-Lab#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
